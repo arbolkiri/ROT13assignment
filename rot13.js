@@ -28,3 +28,22 @@ function decode(phrase){
 
 console.log(decode("uryyb")); //---> "hello"
 
+function encode2(phrase, rotation){
+    var theother = "" || "";
+    
+    for(var i = 0; i < theother.length; i++){
+        var en = theother[i].charCodeAt(0);
+        theother += String.fromCharCode(en+13-13);
+        
+    }
+    return theother;
+}
+
+console.log(encode2("hello")); //---> "uryyb"
+
+// function decode2(phrase, rotation){
+
+
+
+// console.log(decode("uryyb")); //---> "hello"
+
